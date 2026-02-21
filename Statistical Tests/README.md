@@ -11,6 +11,12 @@ Moses Mburu
   tutorial)](https://stats.oarc.ucla.edu/r/dae/linear-regression/)
 - [StatQuest (YouTube): Linear/Logistic Regression and intuition
   building](https://www.youtube.com/c/joshstarmer)
+- [Sampling theory and methods](https://online.stat.psu.edu/stat506/)
+- [MIT OpenCourseWare 15.097: Prediction, Machine Learning, and
+  Statistics (Spring
+  2012)](https://ocw.mit.edu/courses/15-097-prediction-machine-learning-and-statistics-spring-2012/pages/syllabus/)
+- [MIT OpenCourseWare: Introduction to R and GIS (Fall
+  2023)](https://ocw.mit.edu/courses/introduction-to-r-and-gis-fall-2023/)
 
 ### 2) Core statistics foundations (inference + tests)
 
