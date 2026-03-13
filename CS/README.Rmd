@@ -1,0 +1,69 @@
+---
+title: "Bits and Logic Gates"
+author: "GitHub Copilot"
+date: "`r Sys.Date()`"
+output: 
+  html_document:
+    keep_md: true
+---
+
+# Bits and Logic Gates
+
+Welcome to the foundation of computer science! Before we can understand how software runs, we need to understand the physical building blocks that computers use to store data and perform operations.
+
+## 1. The Bit (Binary Digit)
+
+At its lowest level, a modern computer is an enormous collection of microscopic electronic switches (transistors). Each switch can be in one of two states: **on** or **off**. 
+
+Because there are only two states, computers use the **binary number system** (base-2) to represent information. We call each single piece of binary information a **Bit** (short for Binary Digit):
+- **0**: Represents "Off", "False", or "Low Voltage"
+- **1**: Represents "On", "True", or "High Voltage"
+
+### Representing Data
+A single bit can't hold much information. However, when we group bits together, we can represent larger numbers, letters, colors, and instructions.
+- **8 bits** make a **byte** (e.g., `01100001`).
+- With 8 bits, we can represent $2^8 = 256$ different values (from `00000000` to `11111111`).
+- These values can be mapped to numbers (0 to 255), characters (like 'a' = `01100001` in ASCII), or pixels on a screen.
+
+## 2. Logic Gates
+
+If bits are the *data*, **logic gates** are the *operations*. A logic gate is a physical device (built from transistors) that takes one or more binary inputs and produces a single binary output based on a specific logical rule (Boolean logic).
+
+Here are the fundamental logic gates:
+
+### The NOT Gate (Inverter)
+- **Rule**: Outputs the opposite of the input.
+- **Input**: `0` -> **Output**: `1`
+- **Input**: `1` -> **Output**: `0`
+
+### The AND Gate
+- **Rule**: Outputs `1` **only if** ALL inputs are `1`. Like asking "Are 'A' AND 'B' both true?"
+- **Inputs**: `0, 0` -> **Output**: `0`
+- **Inputs**: `0, 1` -> **Output**: `0`
+- **Inputs**: `1, 0` -> **Output**: `0`
+- **Inputs**: `1, 1` -> **Output**: `1`
+
+### The OR Gate
+- **Rule**: Outputs `1` if **at least one** input is `1`. Like asking "Is 'A' OR 'B' true?"
+- **Inputs**: `0, 0` -> **Output**: `0`
+- **Inputs**: `0, 1` -> **Output**: `1`
+- **Inputs**: `1, 0` -> **Output**: `1`
+- **Inputs**: `1, 1` -> **Output**: `1`
+
+### The XOR Gate (Exclusive OR)
+- **Rule**: Outputs `1` if the inputs are **different**. Outputs `0` if they are the same.
+- **Inputs**: `0, 0` -> **Output**: `0` (Same)
+- **Inputs**: `0, 1` -> **Output**: `1` (Different)
+- **Inputs**: `1, 0` -> **Output**: `1` (Different)
+- **Inputs**: `1, 1` -> **Output**: `0` (Same)
+
+## 3. From Gates to Computation
+
+Why do we care about these simple gates? Because **by wiring these simple gates together, we can perform math.**
+
+For example, if you want to add two binary numbers (like `1 + 1`), a computer combines an XOR gate and an AND gate to make a circuit called a **Half Adder**.
+- The `XOR` gate calculates the sum (`1 + 1 = 0` in binary's 1s column).
+- The `AND` gate calculates the "carry over" to the next column (`1` carried over).
+- Result: `1 + 1 = 10` (which is 2 in decimal).
+
+By chaining billions of logic gates together inside a CPU, computers can add, subtract, compare numbers, make decisions, and ultimately sequence operations to run operating systems and software programs!
