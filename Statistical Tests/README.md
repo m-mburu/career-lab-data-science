@@ -17,6 +17,10 @@ Moses Mburu
   2012)](https://ocw.mit.edu/courses/15-097-prediction-machine-learning-and-statistics-spring-2012/pages/syllabus/)
 - [MIT OpenCourseWare: Introduction to R and GIS (Fall
   2023)](https://ocw.mit.edu/courses/introduction-to-r-and-gis-fall-2023/)
+- [Penn State STAT 503: Analysis of
+  Variance](https://online.stat.psu.edu/stat503)
+- [Penn State STAT 502: Design of
+  Experiments](https://online.stat.psu.edu/stat502/)
 
 ### 2) Core statistics foundations (inference + tests)
 
